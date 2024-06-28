@@ -1,0 +1,44 @@
+.snow-container {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    cursor: auto;
+    background-color: transparent;
+  }
+  
+  .snowflake {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    animation: snowflakedrop 2s linear infinite;
+    cursor: auto;
+    opacity: 0.4;
+  }
+
+  .snowflake-1 {
+    background-image: url("./images/snowflake1.png");
+    background-size: contain;
+  }
+
+  .snowflake-2 {
+    background-image: url("./images/snowflake2.png");
+    background-size: contain;
+  }
+
+  .snowflake-3 {
+    background-image: url("./images/snowflake3.png");
+    background-size: contain;
+  }
+
+  
+  @keyframes snowflakedrop {
+    0% {
+        transform: translateY(-100px);
+      }
+      100% {
+        transform: translateY(100vh);
+      }
+}

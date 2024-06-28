@@ -1,0 +1,58 @@
+.flower-container {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    cursor: auto;
+    background-color: transparent;
+  }
+  
+  .flower {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background-image: url("./images/flower.png");
+    background-size: contain;
+    animation: flowerdrop 3s linear infinite;
+    cursor: auto;
+    opacity: 0.4;
+  }
+
+  
+  @keyframes flowerdrop {
+    0% {
+        transform: translateY(-10px) translateX(0);
+    }
+    10% {
+        transform: translateY(10vh) translateX(20px);
+    }
+    20% {
+        transform: translateY(20vh) translateX(-10px);
+    }
+    30% {
+        transform: translateY(30vh) translateX(-10px);
+    }
+    40% {
+        transform: translateY(40vh) translateX(20px);
+    }
+    50% {
+        transform: translateY(50vh) translateX(-10px);
+    }
+    60% {
+        transform: translateY(60vh) translateX(-10px);
+    }
+    70% {
+        transform: translateY(70vh) translateX(20px);
+    }
+    80% {
+        transform: translateY(80vh) translateX(-10px);
+    }
+    90% {
+        transform: translateY(90vh) translateX(-10px);
+    }
+    100% {
+        transform: translateY(100vh) translateX(0);
+    }
+}

@@ -1,0 +1,29 @@
+  .rain-container {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    cursor: auto;
+    background-color: transparent;
+  }
+  
+  .rain {
+    position: absolute;
+    width: 1px;
+    height: 60px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8));
+    animation: raindrop 1s linear infinite;
+    cursor: auto;
+  }
+
+  
+  @keyframes raindrop {
+    0% {
+      transform: translateY(-100px);
+    }
+    100% {
+      transform: translateY(100vh);
+    }
+  }
